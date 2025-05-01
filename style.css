@@ -1,0 +1,86 @@
+/* Basic styles for the snake game */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    animation: glow 5s infinite alternate;
+}
+
+canvas {
+    display: block;
+    background-color: #ddd;
+}
+
+/* Add animation for glowing fluorescent lights along the canvas boundary */
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
+    25% { box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; }
+    50% { box-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00; }
+    75% { box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
+    100% { box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; }
+}
+
+/* Updated styles for controls and countdown */
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+/* Ensure the countdown overlay is centered and styled */
+#countdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+/* Adjust the slider labels to align perfectly above the slider */
+#slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    position: relative;
+    top: -10px; /* Adjust the vertical position */
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Style the scoreboard for better visibility */
+#scoreboard {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+    top: -3rem; /* Move 3 units above */
+    left: 8rem; /* Move 1 unit to the left */
+}
+
+#score {
+    color: darkgreen; /* Set score digits to dark green */
+}

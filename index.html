@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-board"></canvas>
+    </div>
+    <div id="scoreboard">Score: <span id="score">0</span></div>
+    <div id="controls">
+        <label for="speed-slider">Snake Speed:</label>
+        <input type="range" id="speed-slider" min="50" max="300" value="150">
+        <button id="pause-button">Pause Game</button>
+        <button id="start-button">Start Game</button>
+        <button id="end-button">End Game</button>
+        <button id="music-toggle">Switch On Music</button>
+    </div>
+    <div id="countdown" style="display: none; text-align: center; font-size: 2rem; margin-top: 10px;"></div>
+    <script src="script.js"></script>
+</body>
+</html>
