@@ -5,14 +5,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: black; /* Set the background to black */
     font-family: Arial, sans-serif;
+    /* Removed overflow: hidden */
 }
 
 #game-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Removed width: 100% and height: auto */
     border: 5px solid transparent;
     border-radius: 10px;
     padding: 10px;
@@ -22,7 +24,7 @@ body {
 
 canvas {
     display: block;
-    background-color: #ddd;
+    background-color: #ddd; /* Keep the canvas background as is */
 }
 
 /* Add animation for glowing fluorescent lights along the canvas boundary */
